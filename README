@@ -1,0 +1,9 @@
+
+How to get start:
+
+- make sure maven installed on your machine
+- check : mvn -v
+- go to root this project
+- type : mvn install
+- then running : mvn jetty:run
+- visit : localhost:8080
