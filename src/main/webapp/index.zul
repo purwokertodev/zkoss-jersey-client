@@ -1,0 +1,28 @@
+<zk>
+	<window title="Posts" width="100%" border="normal" apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('com.wury.app2.MyViewModel')"
+		validationMessages="@id('vmsgs')">
+		<hbox align="center">
+			Input User id:
+			<textbox id="userId" value="@bind(vm.userId)"/>
+			<button label="Search" onClick="@command('searchByUserId')"/>
+		</hbox>
+		<listbox model="@bind(vm.postList)" mold="paging" pageSize="10" emptyMessage="No Posts yet...">
+			<listhead>
+		        <listheader label="User" />
+		        <listheader label="Id" />
+		        <listheader label="Title"/>
+		        <listheader label="Post"/>
+			</listhead>
+			<template name="model">
+	        <listitem>
+	            <listcell label="@bind(each.userId)"></listcell>
+	            <listcell label="@bind(each.id)"></listcell>
+	            <listcell label="@bind(each.title)"></listcell>
+	            <listcell>$<label value="@bind(each.body)" />
+	            </listcell>
+	        </listitem>
+    </template>
+		</listbox>
+	</window>
+</zk>
