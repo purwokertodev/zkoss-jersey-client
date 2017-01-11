@@ -1,4 +1,4 @@
-package com.wury.app2;
+package com.wury.app2.vm;
 
 import java.util.List;
 
@@ -14,6 +14,7 @@ public class MyViewModel {
 	private List<Post> postList;
 	private PostService postService;
 	private Integer userId;
+	private Post selectedPost;
 
 	@Init
 	public void init() {
@@ -37,6 +38,14 @@ public class MyViewModel {
 	
 	public Integer getUserId(){
 		return userId;
+	}
+	
+	public void setSelectedPost(Post selectedPost){
+		this.selectedPost = selectedPost;
+	}
+	
+	public Post getSelectedPost(){
+		return selectedPost;
 	}
 	
 }

@@ -7,7 +7,7 @@ public class Test {
 
 	public static void main(String[] args){
 		PostService ps = new PostService();
-		for(Post p:ps.getPostsByUser(1)){
+		for(Post p:ps.getAll()){
 			System.out.println(p);
 		}
 		
