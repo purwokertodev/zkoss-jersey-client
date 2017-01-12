@@ -1,0 +1,27 @@
+<vbox vflex="1" hflex="1" align="center" pack="center" spacing="20px" apply="org.zkoss.bind.BindComposer"
+ viewModel="@id('vm') @init('com.wury.app2.vm.PhotoViewModel')">
+	<hbox align="center">
+			Input Photo id:
+			<textbox id="photoId" value="@bind(vm.photoId)"/>
+			<button label="Search" onClick="@command('searchById')"/>
+		</hbox>
+		<listbox model="@bind(vm.listPhoto)" mold="paging" pageSize="10" 
+			selectedItem="@bind(vm.selectedPhoto)" height="300px" emptyMessage="No Photos yet...">
+			<listhead>
+		        <listheader label="Id" />
+		        <listheader label="Title"/>
+			</listhead>
+			<template name="model">
+		        <listitem>
+		            <listcell label="@bind(each.id)"></listcell>
+		            <listcell label="@bind(each.title)"></listcell>
+		        </listitem>
+    		</template>
+		</listbox>
+		<hbox>
+			<image src="@bind(vm.selectedPhoto.thumbnailUrl)" style="padding:10px"/>
+			<vbox>
+				<label value="@bind(vm.selectedPhoto.title)"/>
+			</vbox>
+		</hbox>
+</vbox>

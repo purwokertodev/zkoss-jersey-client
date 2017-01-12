@@ -17,7 +17,7 @@ public class SidebarPageConfigAjaxImpl implements SidebarPageConfig {
 		
 		pageMap.put("fn1",new SidebarPage("fn1","Post","/images/facebook-logo.png","/WEB-INF/page/posts_list.zul"));
 		pageMap.put("fn2",new SidebarPage("fn2","Albums","/images/facebook-logo.png","/WEB-INF/page/posts_list.zul"));
-		pageMap.put("fn3",new SidebarPage("fn3","Photos","/images/facebook-logo.png","/WEB-INF/page/posts_list.zul"));
+		pageMap.put("fn3",new SidebarPage("fn3","Photos","/images/facebook-logo.png","/WEB-INF/page/photo_list.zul"));
 	}
 
 	public List<SidebarPage> getPages() {
