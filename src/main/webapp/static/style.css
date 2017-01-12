@@ -1,6 +1,6 @@
 .banner {
-	background-color:#102d35;
-	color: white;
+	background-color:#66ccff;
+	color: black;
 	padding: 5px 10px;
 }
 .banner-head{
@@ -12,13 +12,13 @@
 } 
 
 .footer {
-	background-color:#102d35;
-	color: white;
+	background-color:#66ccff;
+	color: black;
 	padding-top: 5px;
 }
 
 .footer a,.footer a:VISITED {
-	color: white;	
+	color: black;	
 }
 
 .sidebar a,.sidebar a:VISITED {
