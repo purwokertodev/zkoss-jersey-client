@@ -1,0 +1,6 @@
+<div hflex="1" vflex="1" sclass="footer">
+	<vbox hflex="1" vflex="1" align="center">
+		Bla bla bla
+		<a href="https://github.com/wuriyanto48">Wury's Github</a>
+	</vbox>
+</div>
